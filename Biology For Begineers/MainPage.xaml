@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="Biology_For_Begineers.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Biology_For_Begineers"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Text="Quiz App Login"
+                   FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1">
+            <TextBox PlaceholderText="student"
+                     Margin="20"
+                     Width="400"
+                     Name="txtName"/>
+            <PasswordBox PlaceholderText="password"
+                         Margin="20"
+                         Width="400"
+                         x:Name="txtPw"/>
+            <Button Content="Login"
+                    Width="400"
+                    HorizontalAlignment="Center"
+                    FontSize="20" Click="Button_Click"/>
+        </StackPanel>
+        <TextBlock Grid.Row="2"
+                   VerticalAlignment="Bottom"
+                   Text="©️ QUIZ APP"
+                   Margin="20"
+                   HorizontalAlignment="Center"/>
+    </Grid>
+</Page>

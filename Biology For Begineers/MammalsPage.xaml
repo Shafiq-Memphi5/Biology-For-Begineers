@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Biology_For_Begineers.MammalsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Biology_For_Begineers"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    Margin="0,20,0,0">
+            <TextBlock Text="Mammals Quiz"
+                       FontSize="20"
+                       FontWeight="Black"/>
+            <TextBlock x:Name="txtTimer"
+                       Margin="0,10,0,0"
+                       FontSize="15"
+                       FontWeight="Medium"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Margin="30,90,30,30"
+                    Padding="20"
+                    >
+            <TextBlock FontSize="15"
+                       x:Name="txtQuestion"/>
+            <ListView x:Name="txtChoices"
+                      FontSize="10"
+                      Margin="25,10"/>
+            <TextBlock FontSize="15"
+                       x:Name="txtResult"/>
+        </StackPanel>
+        <Button Content="Submit"
+                Margin="0,95,0,0"
+                HorizontalAlignment="Center"
+                FontSize="15" Click="Button_Click"/>
+    </Grid>
+</Page>
